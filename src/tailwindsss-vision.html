@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SSS-Vision</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="font-Poppins font-bold min-h-screen">
+    <nav class="flex justify-between gap-40">
+      <h1 class="text-2xl pl-5 pt-5 font-bold">SSS-Vision</h1>
+      <div class="flex gap-12">
+        <a class="text-2xl pl-5 pt-5 font-bold"
+          ><h1 title="Check out user uploaded pictures of tripleS!">
+            Gallery
+          </h1></a
+        >
+        <a href="https://www.triplescosmos.com/" target="_blank">
+          <img
+            class="w-20"
+            src="/assets/toripuruesu.jpg"
+            title="tripleS official website"
+          />
+        </a>
+      </div>
+    </nav>
+    <div
+      id="main-body"
+      class="relative flex flex-col justify-center items-center text-center bg-[url('/assets/ot24.jpeg')] bg-no-repeat bg-cover min-h-screen"
+    >
+      <div
+        class="absolute inset-0 bg-[rgba(4,0,30,0.5)] bg-gradient-to-b from-[rgba(4,0,30,0.5)] to-[rgba(4,9,30,0.7)] pointer-events-none"
+      ></div>
+      <div class="relative z-50">
+        <h1
+          class="text-9xl text-transparent bg-[url('/assets/back.png')] bg-clip-text animate-back"
+          style="
+            background-image: url('/assets/back.png');
+            -webkit-text-stroke: 1px white;
+          "
+        >
+          Welcome to<br />SSS-Vision!
+        </h1>
+        <h2 class="text-white text-2xl">
+          a dimension to identify tripleS members easily with the help of AI
+        </h2>
+        <h4 class="text-white text-xl mt-2">
+          Start by uploading your image here
+        </h4>
+      </div>
+      <div class="uploadContainer">
+        <form id="uploadForm" enctype="multipart/form-data">
+          <div class="upload-box relative z-50">
+            <input
+              class="hidden"
+              type="file"
+              id="image"
+              name="image"
+              accept="image/*"
+            />
+            <label
+              class="inline-block text-black bg-white text-center text-lg font-semibold tracking-[1.5px] cursor-pointer shadow-lg rounded-lg m-4"
+              style="padding: 15px 30px"
+              >UPLOAD IMAGE</label
+            >
+          </div>
+          <div class="link-box relative z-50">
+            <input
+              class="w-[600px] mb-4 mt-1 p-1 border border-solid border-black rounded-md text-sm pointer-events-auto outline-none shadow-xl"
+              type="text"
+              id="image_url"
+              name="image_url"
+              placeholder="Or Paste an image URL here"
+              autocomplete="off"
+            />
+          </div>
+          <!-- THE HTML BELOW NEEDS JAVASCRIPT -->
+          <!-- <div class="button-group">
+            <button type="submit"><span>Scan for S</span></button>
+            <button type="button" id="clearBtn" style="display: none">
+              Clear
+            </button>
+          </div>
+        </form>
+      </div>
+      <div id="progressBarContainer">
+        <div id="progressBar">
+          <div id="progress"></div>
+        </div>
+        <p id="progressText"></p>
+      </div>
+      <div id="result">
+        <img id="processedImage" src="" />
+        <button id="closeBtn">Close</button>
+      </div>  -->
+    </div>
+  </body>
+</html>
